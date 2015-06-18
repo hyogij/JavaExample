@@ -1,5 +1,7 @@
 package Ds;
 
+import java.util.Iterator;
+
 // Driver class to test data structure classes
 public class Driver {
 	private static final int MAX_SIZE = 3;
@@ -7,6 +9,8 @@ public class Driver {
 	public static void main(String[] args) {
 		testStackArrayBased();
 		testStackListBased();
+		testStackListIterator();
+		testStackGeneric();
 	}
 
 	private static void testStackArrayBased() {
@@ -38,6 +42,41 @@ public class Driver {
 		for (int i = 0; i < 4; i++) {
 			value = stackListBased.pop();
 			stackListBased.printStack();
+		}
+	}
+
+	private static void testStackListIterator() {
+		System.out.println("Test stackListIterator class");
+		StackListIterator stackListIterator = new StackListIterator(MAX_SIZE);
+
+		for (int i = 0; i < 4; i++) {
+			stackListIterator.push(i);
+			stackListIterator.printStack();
+		}
+
+		Iterator iterator = stackListIterator.iterator();
+		int index = 0;
+		while (iterator.hasNext()) {
+			System.out.println("Value " + iterator.next());
+		}
+
+		for (int value : stackListIterator) {
+			System.out.println("Value " + value);
+		}
+	}
+
+	private static void testStackGeneric() {
+		System.out.println("Test StackGeneric class");
+		StackGeneric stackGeneric = new StackGeneric<Integer>(MAX_SIZE);
+
+		for (int i = 0; i < 4; i++) {
+			stackGeneric.push(i);
+			stackGeneric.printStack();
+		}
+
+		for (int i = 0; i < 4; i++) {
+			stackGeneric.pop();
+			stackGeneric.printStack();
 		}
 	}
 }
