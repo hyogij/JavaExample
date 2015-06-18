@@ -2,7 +2,7 @@ package Ds;
 
 import java.util.ArrayList;
 
-// Stack class based array implementation
+// Generic stack class
 public class StackGeneric<T> {
 	private int maxSize = 0;
 	private int top = 0;

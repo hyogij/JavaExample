@@ -3,7 +3,7 @@ package Ds;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-// Stack class based array implementation
+// Stack class that provides iterator 
 public class StackListIterator implements Iterable<Integer> {
 	private int maxSize = 0;
 	private int top = 0;
