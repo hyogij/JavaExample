@@ -2,19 +2,21 @@ package Ds;
 
 import java.util.Iterator;
 
+import com.kftc.common.util.LogUtil;
+
 // Driver class to test data structure classes
 public class Driver {
 	private static final int MAX_SIZE = 5;
-
+	
 	public static void main(String[] args) {
-		testStackArrayBased();
-		testStackListBased();
-		testStackListIterator();
-		testStackGeneric();
-
-		testQueueArrayBased();
-		testQueueListBased();
-		testCircularQueue();
+//		testStackArrayBased();
+//		testStackListBased();
+//		testStackListIterator();
+//		testStackGeneric();
+//
+//		testQueueArrayBased();
+//		testQueueListBased();
+//		testCircularQueue();
 	}
 
 	private static void testStackArrayBased() {
