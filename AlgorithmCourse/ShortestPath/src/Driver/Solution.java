@@ -9,6 +9,7 @@ import ShortestPath.Edge;
 import ShortestPath.Graph;
 import ShortestPath.Vertex;
 
+// http://www.vogella.com/tutorials/JavaAlgorithmsDijkstra/article.html
 public class Solution {
 	private static List<Vertex> nodes = null;
 	private static List<Edge> edges = null;
