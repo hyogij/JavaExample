@@ -70,7 +70,6 @@ public class BellmanFord {
 				System.out.println("\t\t-");
 			}
 		}
-		System.out.println();
 	}
 
 	// A utility function used to print the solution
@@ -94,5 +93,6 @@ public class BellmanFord {
 		// Reverses path
 		Collections.reverse(path);
 		System.out.println(path.toString() + " : " + value);
+		System.out.println();
 	}
 }

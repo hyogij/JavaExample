@@ -53,8 +53,11 @@ public class Drive {
 				}
 
 				// Find the best way to convert from src to dest
-				// BellmanFord.BellmanFordAlgorithm(graph, 5, 4);
-				BellmanFord.BellmanFordAlgorithm(graph, 0, 1);
+				BellmanFord.BellmanFordAlgorithm(graph, 5, 0);
+				BellmanFord.BellmanFordAlgorithm(graph, 5, 1);
+				BellmanFord.BellmanFordAlgorithm(graph, 5, 2);
+				BellmanFord.BellmanFordAlgorithm(graph, 5, 3);
+				BellmanFord.BellmanFordAlgorithm(graph, 5, 4);
 			}
 		} catch (Exception ex) {
 			ex.printStackTrace();
